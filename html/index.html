@@ -2,23 +2,85 @@
 <html>
     <head>
         <title>My first HTML</title>
+        <style>
+            table,tr,td {
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body>
         <h1>Hello World and hello Finland</h1>
-        <h2>Hello World and hello Finland</h2>
-        <br>
-        <br>
-        <hr>
-        <br>
-        <br>
-
-        <br>
-        <h3>Hello World and hello Finland</h3>
-        <h4>Hello World and hello Finland</h4>
         <p>
             <b>Lorem ipsum dolor</b> <i>sit amet consectetur</i>, <strong>adipisicing</strong> elit. <em>Eaque</em> saepe neque fuga tempore sed quidem modi vitae dolorum debitis praesentium facilis at expedita aperiam, enim fugiat possimus, repudiandae autem! Rem.
         </p>
         <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem dignissimos et! Eveniet velit porro atque eum optio? Cumque, laboriosam accusantium illo id asperiores delectus dolorem vel odio architecto nobis.</article>
         <simostag style="color: red;">Here is simo's tag</simostag>
+
+        <hr>
+        <h2>Ordered list of programming languages</h2>
+        <ol>
+            <li>C#</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+        </ol>
+        <hr>
+        <h2>Car brand</h2>
+        <ul>
+            <li>Volvo</li>
+            <ul>
+                <li>XC60</li>
+                <li>XC90</li>
+                <li>XC40</li>
+            </ul>
+            <li>Toyota</li>
+            <li>BMW</li>
+        </ul>
+        <h2>Food</h2>
+        <dl>
+            <dt>Sushi</dt>
+            <dd>A dish originally from Japan</dd>
+            <dt>Salami</dt>
+            <dd>A meat product</dd>
+        </dl>
+        <hr>
+        <h2>Link</h2>
+        <p>I want to be redirect to Google</p>
+        <a target="_top" href="https://google.com">Go to Google</a>
+        <br>
+        <a target="_blank" href="./submodule/sub_page.html">Go to the sub page</a>
+        <br>
+        <br>
+        <h2>Image</h2>
+        <img style="width: 100px" src="https://s3.amazonaws.com/tf-nightingale/2022/12/html1.jpg" alt="html image" title="The demo for img">
+        <br>
+        <img src="./images/htmlcssjs-details.png" alt="relative path image">
+        <br>
+        <h2>Table</h2>
+        <table>
+            <tr>
+                <td>Web dev</td>
+                <td>C# lang</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="./images/htmlcssjs-details.png" alt="relative path image"></td>
+                <td>6</td>
+            </tr>
+        </table>
+        <br>
+        <form action="http://backend/hello" method="post">
+            <label for="username">Type your user name</label>
+            <input type="text" id="username" name="username_input"><br>
+            <label for="password">Type your password</label>
+            <input type="password" id="password" name="password_input"><br>
+            <input type="submit" value="login">
+        </form>
+        <br>
     </body>
 </html>
