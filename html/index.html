@@ -2,24 +2,30 @@
 <html>
     <head>
         <title>My first HTML</title>
-        <style>
-            table,tr,td {
-                border: 1px solid black;
-            }
-        </style>
+        <link rel="stylesheet" href="./styles/style.css">
     </head>
     <body>
-        <h1>Hello World and hello Finland</h1>
-        <p>
-            <b>Lorem ipsum dolor</b> <i>sit amet consectetur</i>, <strong>adipisicing</strong> elit. <em>Eaque</em> saepe neque fuga tempore sed quidem modi vitae dolorum debitis praesentium facilis at expedita aperiam, enim fugiat possimus, repudiandae autem! Rem.
-        </p>
-        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem dignissimos et! Eveniet velit porro atque eum optio? Cumque, laboriosam accusantium illo id asperiores delectus dolorem vel odio architecto nobis.</article>
+        <div style="font-size: xx-large;">Hello World and hello Finland</div>
+        <div id="first_paragraph">
+            <p>
+                <b>Lorem ipsum dolor</b> <i>sit amet consectetur</i>, <strong>adipisicing</strong> elit. <em>Eaque</em> saepe neque fuga tempore sed quidem modi vitae dolorum debitis praesentium facilis at expedita aperiam, enim fugiat possimus, repudiandae autem! Rem.
+            </p>
+            <span>
+                <p>
+                    <b>Lorem ipsum dolor</b> <i>sit amet consectetur</i>, <strong>adipisicing</strong> elit. <em>Eaque</em> saepe neque fuga tempore sed quidem modi vitae dolorum debitis praesentium facilis at expedita aperiam, enim fugiat possimus, repudiandae autem! Rem.
+                </p>
+                <p>
+                    <b>Lorem ipsum dolor</b> <i>sit amet consectetur</i>, <strong>adipisicing</strong> elit. <em>Eaque</em> saepe neque fuga tempore sed quidem modi vitae dolorum debitis praesentium facilis at expedita aperiam, enim fugiat possimus, repudiandae autem! Rem.
+                </p>
+            </span>
+        </div>
+        <article id="demo_article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem dignissimos et! Eveniet velit porro atque eum optio? Cumque, laboriosam accusantium illo id asperiores delectus dolorem vel odio architecto nobis.</article>
         <simostag style="color: red;">Here is simo's tag</simostag>
 
         <hr>
         <h2>Ordered list of programming languages</h2>
         <ol>
-            <li>C#</li>
+            <li id="csharp_item">C#</li>
             <li>Python</li>
             <li>JavaScript</li>
         </ol>
@@ -28,9 +34,9 @@
         <ul>
             <li>Volvo</li>
             <ul>
-                <li>XC60</li>
-                <li>XC90</li>
-                <li>XC40</li>
+                <li class="volvo_car">XC60</li>
+                <li class="volvo_car">XC90</li>
+                <li class="volvo_car">XC40</li>
             </ul>
             <li>Toyota</li>
             <li>BMW</li>
@@ -48,8 +54,10 @@
         <a target="_top" href="https://google.com">Go to Google</a>
         <br>
         <a target="_blank" href="./submodule/sub_page.html">Go to the sub page</a>
+
         <br>
         <br>
+        <a target="_blank" href="./submodule/sub_page.html">Pseudo-class</a>
         <h2>Image</h2>
         <img style="width: 100px" src="https://s3.amazonaws.com/tf-nightingale/2022/12/html1.jpg" alt="html image" title="The demo for img">
         <br>
