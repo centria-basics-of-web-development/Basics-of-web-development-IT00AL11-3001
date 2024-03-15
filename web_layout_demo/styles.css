@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 body {
+    height: 100vh;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     display: grid;
-    /* grid-template-rows: 51px auto; */
+        /* grid-template-rows: 51px auto; */
     grid-template-rows: auto 50px;
-    grid-template-columns: fit-content(12%) auto;
+    grid-template-columns: 12% auto;
     grid-template-areas: 
     "sidebar main"
     "footer footer";
@@ -88,4 +89,27 @@ img {
     display: grid;
     grid-area: main;
     grid-template-rows: 51px fit-content(30%);
+}
+
+#features {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+}
+
+#features i {
+    font-size: 2em;
+}
+
+ul#features {
+    margin: 0; padding: 0;
+}
+
+ul#features li {
+    background-color: lightgray;
+    padding: 1em;
+}
+
+ul#features li p {
+    color: #4c4c4c;
 }
